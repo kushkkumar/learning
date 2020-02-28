@@ -1,0 +1,38 @@
+//let vs var
+
+var is a global scope where all the varabile use it when we give the var as a declaration then we get the value same for example
+
+
+"
+function testVar(){
+var a=30;
+
+    if(true){
+        var a=50;
+        console.log(a);
+    }
+    console.log(a);
+}
+testVar()
+
+The output was 50 and 50
+"
+
+the let keyword with the sample example we get it as 50 and 30 because it does not set to the global declaration but it just assign to the immediate istance
+
+so the sample example by using let we get as
+
+"
+function testVar(){
+let a=30;
+
+    if(true){
+        let a=50;
+        console.log(a);
+    }
+    console.log(a);
+}
+testVar()
+
+The output as 50 30
+"

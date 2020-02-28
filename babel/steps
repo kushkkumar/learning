@@ -1,0 +1,6 @@
+download node.js.
+download npm and setup init in it and set the package.json file.
+from npm install babel by using the code "npm install babel-cli babel-presets-es2015 --save-dev.
+create a src folder and dist folder where scr we will be writing all the es6 code and the dist folder will be having all the compiled es5 file in it by using babel.
+go to package.json and write a {"script":{"build":"babel src -d dist"}} and {"script":{"build":"babel --presets es2015 src -d dist"}}.
+In the src folder create main.js file and write all the es6 file and compile using the terminal and write a code as "npm run build" it will run the code and in dist we will find the converted es5 file.
